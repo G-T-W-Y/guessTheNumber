@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>PE. #03 - practical exercise</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<p class="text">Попробуйте угадать число 0т 1 до 77, которое я задумал...<br>Панель, расположенная ниже, поможет вам...</p>
+		<div class="bloc">
+			<input type="text" id="txt">
+			<button class="button" onclick="enterNumber();">Проверить</button>
+		</div>
+		<p id="rez2"></p>
+		<input type="range" id="nr" min="1" max="77" class="myRange" oninput="catchesNumber();">
+		<p id="gen"></p>
+		<p id="rez1"></p>
+		<div class="bloc">
+			<button class="buttonRestart" onclick="restart();">Обновить игру!</button>
+		</div>
+	</div>
+	<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
